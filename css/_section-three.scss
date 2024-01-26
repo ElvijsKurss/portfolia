@@ -1,0 +1,15 @@
+@import "breakpoints";
+
+/*! Section three kontents */
+.section-three {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .main-header {
+    color: black;
+  }
+  .line {
+    background: black;
+  }
+}

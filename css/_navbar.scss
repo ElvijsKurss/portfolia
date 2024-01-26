@@ -1,0 +1,54 @@
+@import "breakpoints";
+
+/*! Navbar ikonas css */
+#endInfo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  #info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to("medium") {
+      justify-content: center;
+    }
+    @include respond-to("average") {
+      justify-content: flex-end;
+    }
+    @include respond-to("large") {
+      justify-content: flex-end;
+    }
+
+    .icons {
+      padding: 0.4em 1em;
+    }
+    a {
+      text-decoration: none;
+    }
+    .fa {
+      text-decoration: none;
+      color: white;
+      opacity: 0.5;
+      transition: 0.3s ease;
+      font-size: 1em;
+      @include respond-to("medium") {
+        font-size: 1.1em;
+      }
+      @include respond-to("average") {
+        font-size: 1.2em;
+      }
+      @include respond-to("large") {
+        font-size: 1.2em;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+@charset "UTF-8";
+/*! Importi */
+/*! Breakpoints */
+/*! Footeris */
+footer {
+  height: 2em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 920px) {
+  footer {
+    height: 3em;
+  }
+}
+@media (min-width: 800px) {
+  footer {
+    height: 4em;
+  }
+}
+@media (min-width: 1100px) {
+  footer {
+    height: 4em;
+  }
+}
+footer #footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #footer-div #footer-text {
+  color: white;
+  opacity: 0.3;
+  font-size: 14px;
+}
+@media (min-width: 920px) {
+  footer #footer-div #footer-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 800px) {
+  footer #footer-div #footer-text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1100px) {
+  footer #footer-div #footer-text {
+    font-size: 18px;
+  }
+}
+
+/*! Wrapperis */
+.content-wrapper {
+  box-sizing: border-box;
+  min-width: 375px;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/*! Breakpoints */
+/*! Pirmās lapas css, navbar + video un teksts */
+#top-section #content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+#top-section #content #front-page {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#top-section #content .front-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+#top-section #content .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#top-section #content video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#top-section #content #nav-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  animation: fadeIn 3s ease;
+  transition: 0.4s ease;
+  border-bottom: 0.5px solid transparent;
+}
+#top-section #content #nav-content:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 0.5px solid rgb(44, 44, 44);
+}
+#top-section #content #nav-content #navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+#top-section #content #nav-content #navBar #list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#top-section #content #nav-content #navBar #list ol li {
+  margin: 0 1em;
+}
+#top-section #content #nav-content #navBar #list ol li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  font-size: 1em;
+}
+@media (min-width: 920px) {
+  #top-section #content #nav-content #navBar #list ol li a {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 800px) {
+  #top-section #content #nav-content #navBar #list ol li a {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1100px) {
+  #top-section #content #nav-content #navBar #list ol li a {
+    font-size: 1.2em;
+  }
+}
+#top-section #content #nav-content #navBar #list ol li a:hover {
+  opacity: 1;
+}
+#top-section #content .front-page-text {
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  opacity: 0.9;
+  animation: fadeIn 3s ease;
+}
+@media (min-width: 920px) {
+  #top-section #content .front-page-text {
+    font-size: 160px;
+  }
+}
+@media (min-width: 800px) {
+  #top-section #content .front-page-text {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1100px) {
+  #top-section #content .front-page-text {
+    font-size: 220px;
+  }
+}
+
+/*! Breakpoints */
+/*! Css priekš new page, kad uzspiež uz ikonam*/
+#travolta-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+}
+
+.go-back {
+  display: flex;
+}
+.go-back h1 {
+  margin: 1em 0em 0em 3em;
+}
+.go-back h1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding-left: 2em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+/*! Breakpoints */
+/*! Navbar ikonas css */
+#endInfo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#endInfo #info {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 920px) {
+  #endInfo #info {
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  #endInfo #info {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1100px) {
+  #endInfo #info {
+    justify-content: flex-end;
+  }
+}
+#endInfo #info .icons {
+  padding: 0.4em 1em;
+}
+#endInfo #info a {
+  text-decoration: none;
+}
+#endInfo #info .fa {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  font-size: 1em;
+}
+@media (min-width: 920px) {
+  #endInfo #info .fa {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 800px) {
+  #endInfo #info .fa {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1100px) {
+  #endInfo #info .fa {
+    font-size: 1.2em;
+  }
+}
+#endInfo #info .fa:hover {
+  opacity: 1;
+}
+
+/*! Breakpoints */
+/*! Header teksts un tā līnija */
+.main-header {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+}
+@media (min-width: 920px) {
+  .main-header {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 800px) {
+  .main-header {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 1100px) {
+  .main-header {
+    font-size: 3.2em;
+  }
+}
+
+.line {
+  background: white;
+  height: 2px;
+  margin: 25px 0 75px 0;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 920px) {
+  .line {
+    width: 80px;
+    height: 2px;
+  }
+}
+@media (min-width: 800px) {
+  .line {
+    width: 90px;
+    height: 3px;
+  }
+}
+@media (min-width: 1100px) {
+  .line {
+    width: 100px;
+    height: 4px;
+  }
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*! Breakpoints */
+/*! Section one kontents */
+.section-one {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-one .main-header {
+  color: black;
+}
+.section-one .line {
+  background: black;
+}
+
+/*! Breakpoints */
+/*! Section two kontents */
+.section-two {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.section-two #grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  justify-content: stretch;
+}
+.section-two #grid .grid-item {
+  text-align: center;
+  height: 300px;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.section-two #grid .grid-item:hover {
+  opacity: 1;
+}
+.section-two #grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*! Breakpoints */
+/*! Section three kontents */
+.section-three {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-three .main-header {
+  color: black;
+}
+.section-three .line {
+  background: black;
+}
+
+/*! Breakpoints */
+/*! Animācīja - navbar tekstam un first page tekstam */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*! Vispārīgie settingi */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/*! Section kopējais css */
+.section-one,
+.section-two,
+.section-three {
+  width: auto;
+  height: 100vh;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}/*# sourceMappingURL=styles.css.map */

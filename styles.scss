@@ -1,0 +1,34 @@
+/*! Importi */
+@import "css/footer";
+@import "css/wrapper";
+@import "css/main";
+@import "css/travolta";
+@import "css/navbar";
+@import "css/header";
+@import "css/section-one";
+@import "css/section-two";
+@import "css/section-three";
+@import "css/breakpoints";
+@import "css/keyframes";
+
+/*! Vispārīgie settingi */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+/*! Section kopējais css */
+.section-one,
+.section-two,
+.section-three {
+  width: auto;
+  height: 100vh;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}

@@ -1,0 +1,121 @@
+@import "breakpoints";
+
+/*! Pirmās lapas css, navbar + video un teksts */
+#top-section {
+  #content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    #front-page {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .front-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #nav-content {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      animation: fadeIn 3s ease;
+      transition: 0.4s ease;
+      border-bottom: 0.5px solid transparent;
+      &:hover {
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom: 0.5px solid rgb(44, 44, 44);
+      }
+
+      #navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        margin: 0 auto;
+
+        #list {
+          ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+              margin: 0 1em;
+
+              a {
+                text-decoration: none;
+                color: white;
+                opacity: 0.5;
+                transition: 0.3s ease;
+                font-size: 1em;
+                @include respond-to("medium") {
+                  font-size: 1.1em;
+                }
+                @include respond-to("average") {
+                  font-size: 1.2em;
+                }
+                @include respond-to("large") {
+                  font-size: 1.2em;
+                }
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .front-page-text {
+      mix-blend-mode: difference;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-size: 100px;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      opacity: 0.9;
+      animation: fadeIn 3s ease;
+      @include respond-to("medium") {
+        font-size: 160px;
+      }
+      @include respond-to("average") {
+        font-size: 180px;
+      }
+      @include respond-to("large") {
+        font-size: 220px;
+      }
+    }
+  }
+}

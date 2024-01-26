@@ -1,0 +1,46 @@
+@import "breakpoints";
+
+/*! Header teksts un tā līnija */
+.main-header {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+  @include respond-to("medium") {
+    font-size: 2.3em;
+  }
+  @include respond-to("average") {
+    font-size: 2.8em;
+  }
+  @include respond-to("large") {
+    font-size: 3.2em;
+  }
+}
+
+.line {
+  background: white;
+  height: 2px;
+  margin: 25px 0 75px 0;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond-to("medium") {
+    width: 80px;
+    height: 2px;
+  }
+  @include respond-to("average") {
+    width: 90px;
+    height: 3px;
+  }
+  @include respond-to("large") {
+    width: 100px;
+    height: 4px;
+  }
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

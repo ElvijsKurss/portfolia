@@ -1,0 +1,38 @@
+@import "breakpoints";
+
+/*! Footeris */
+footer {
+  height: 2em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond-to("medium") {
+    height: 3em;
+  }
+  @include respond-to("average") {
+    height: 4em;
+  }
+  @include respond-to("large") {
+    height: 4em;
+  }
+  #footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #footer-text {
+      color: white;
+      opacity: 0.3;
+      font-size: 14px;
+      @include respond-to("medium") {
+        font-size: 16px;
+      }
+      @include respond-to("average") {
+        font-size: 18px;
+      }
+      @include respond-to("large") {
+        font-size: 18px;
+      }
+    }
+  }
+}
