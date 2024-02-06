@@ -1,0 +1,52 @@
+#middle-section {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    .header-container {
+      display: flex;
+    }
+    .main-header {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .line {
+      background: #ffffff;
+      height: 4px;
+      margin: 25px 0 75px 0;
+      width: 100px;
+    }
+    #about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.1);
+      border-right: 0.5px solid rgba(211, 211, 211, 0.1);
+    }
+  
+    #experience {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.1);
+      border-right: 0.5px solid rgba(211, 211, 211, 0.1);
+      background-color: rgba(37, 37, 37, 0.2);
+    }
+    #goals {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.1);
+      border-right: 0.5px solid rgba(211, 211, 211, 0.1);
+    }
+  }

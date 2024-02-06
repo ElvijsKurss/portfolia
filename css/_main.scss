@@ -107,14 +107,18 @@
       text-transform: uppercase;
       opacity: 0.9;
       animation: fadeIn 3s ease;
+      margin-top: 1rem;
       @include respond-to("medium") {
-        font-size: 160px;
+        font-size: 10px;
+        margin-top: 7rem;
       }
       @include respond-to("average") {
         font-size: 180px;
+        margin-top: 6rem;
       }
       @include respond-to("large") {
         font-size: 220px;
+        margin-top: 5rem;
       }
     }
   }

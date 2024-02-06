@@ -166,20 +166,24 @@ footer #footer-div #footer-text {
   text-transform: uppercase;
   opacity: 0.9;
   animation: fadeIn 3s ease;
+  margin-top: 1rem;
 }
 @media (min-width: 920px) {
   #top-section #content .front-page-text {
-    font-size: 160px;
+    font-size: 10px;
+    margin-top: 7rem;
   }
 }
 @media (min-width: 800px) {
   #top-section #content .front-page-text {
     font-size: 180px;
+    margin-top: 6rem;
   }
 }
 @media (min-width: 1100px) {
   #top-section #content .front-page-text {
     font-size: 220px;
+    margin-top: 5rem;
   }
 }
 
@@ -422,7 +426,6 @@ html {
 .section-two,
 .section-three {
   width: auto;
-  height: 100vh;
   padding-bottom: 5rem;
   padding-top: 5rem;
 }/*# sourceMappingURL=styles.css.map */
