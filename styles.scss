@@ -11,6 +11,9 @@
 @import "css/breakpoints";
 @import "css/keyframes";
 
+// Fonti
+@import "css/fonti/fonti";
+
 /*! Vispārīgie settingi */
 body,
 html {
@@ -28,6 +31,58 @@ html {
 .section-two,
 .section-three {
   width: auto;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-family: PantonBoldLower;
+  font-size: 10px;
+  .grid-item {
+    display: flex;
+    .description {
+      margin: 15px;
+      font-size: 15px;
+      text-align: justify;
+      @include respond-to("medium") {
+        font-size: 10px;
+        margin: 30px;
+      }
+      @include respond-to("average") {
+        font-size: 13px;
+        margin: 20px;
+      }
+      @include respond-to("large") {
+        font-size: 16px;
+        margin: 30px;
+      }
+    }
+  }
+}
+
+.filler {
+  color: green;
+  font-size: 16px;
+  @include respond-to("medium") {
+    font-size: 18px;
+  }
+  @include respond-to("average") {
+    font-size: 19px;
+  }
+  @include respond-to("large") {
+    font-size: 20px;
+  }
+}
+.description {
+  margin: 15px;
+  font-size: 15px;
+  @include respond-to("medium") {
+    font-size: 16px;
+    margin: 30px;
+  }
+  @include respond-to("average") {
+    font-size: 18px;
+    margin: 20px;
+  }
+  @include respond-to("large") {
+    font-size: 19px;
+    margin: 30px;
+  }
 }
